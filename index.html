@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>🍽️ เมนูอร่อยเพื่อสุขภาพ — คุณแม่เลือกได้</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- หัวเว็บไซต์ -->
+    <header class="header">
+        <div class="header-content">
+            <h1 class="title">🍽️ ครัวคุณแม่ แนะนำเมนูอร่อย</h1>
+            <p class="subtitle">เลือกตามความต้องการ อร่อยและมีประโยชน์ครบครัน</p>
+        </div>
+        <div class="decoration-circle circle-1"></div>
+        <div class="decoration-circle circle-2"></div>
+    </header>
+
+    <!-- ส่วนเลือกประเภทเมนู -->
+    <section class="filter-section">
+        <h2 class="section-title">✨ เลือกประเภทเมนูที่ต้องการ</h2>
+        <p class="section-desc">กดเลือกได้หลายอย่าง พร้อมกันนะครับ</p>
+        
+        <div class="checkbox-container">
+            <label class="checkbox-label">
+                <input type="checkbox" class="checkbox-input" data-filter="height">
+                <span class="checkbox-custom"></span>
+                <span class="checkbox-text">📏 เพิ่มความสูง</span>
+            </label>
+            <label class="checkbox-label">
+                <input type="checkbox" class="checkbox-input" data-filter="weight-gain">
+                <span class="checkbox-custom"></span>
+                <span class="checkbox-text">⚖️ เพิ่มน้ำหนัก</span>
+            </label>
+            <label class="checkbox-label">
+                <input type="checkbox" class="checkbox-input" data-filter="weight-loss">
+                <span class="checkbox-custom"></span>
+                <span class="checkbox-text">🔥 ลดน้ำหนัก</span>
+            </label>
+            <label class="checkbox-label">
+                <input type="checkbox" class="checkbox-input" data-filter="energy">
+                <span class="checkbox-custom"></span>
+                <span class="checkbox-text">⚡ พลังงานสูง</span>
+            </label>
+        </div>
+        
+        <button class="reset-btn" id="resetBtn">🔄 เลือกทั้งหมดใหม่</button>
+    </section>
+
+    <!-- แสดงจำนวนเมนูที่เจอ -->
+    <div class="result-count" id="resultCount">แสดง <span id="countValue">30</span> เมนู</div>
+
+    <!-- รายการเมนูอาหาร -->
+    <main class="menu-container" id="menuContainer">
+        <!-- เมนูจะถูกเพิ่มที่นี่ด้วย JavaScript -->
+    </main>
+
+    <!-- ปุ่มกลับด้านบน -->
+    <button class="back-to-top" id="backToTop">⬆️</button>
+
+    <!-- ส่วนท้าย -->
+    <footer class="footer">
+        <p>💖 ทำด้วยความรัก เพื่อคุณแม่ | มี <span id="totalMenus">30</span> เมนูแนะนำ</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
